@@ -1,0 +1,37 @@
+package br.com.residencia.poo.segundaaula;
+
+import java.util.Scanner;
+
+public class SegundaAulaExercicioQuatro {
+
+	public static void main(String[] args) {
+		
+		 Scanner leia = new Scanner (System.in);
+		 String celsius, conversor;
+		 float temperatura1, temperatura2;
+		double C;
+		 double F;
+
+		 System.out.print("Conversor de temperatura");
+		 System.out.print("\nO que você quer converter?" + "\n1) Graus Celsius (°C) em graus Fahrenheit (°F)" + "\n" +
+		"2) Graus Fahrenheit (°F) em graus Celsius (°C)");
+		System.out.print("\nDigite a opção desejada: ");
+		conversor = leia.next();
+
+	 	if (conversor.equals("1")){
+	 		System.out.print("\nDigite a temperatura em graus Celsius (°C): "); 
+	 		temperatura1 = leia.nextFloat();
+	 		F = (temperatura1*1.8) + 32;
+	 		System.out.print("\nA temperatura em graus Fahrenheit (°F) é: " + F);
+	 	
+	 	}else if (conversor.equals("2")) {
+	 		
+	 		System.out.print("Digite a temperatura em graus Fahrenheit (°F): ");
+			temperatura2 = leia.nextFloat();
+			C=(temperatura2-32)/1.8;
+			System.out.print("\nA temperatura em graus Celsius (°C) é: " + C +"°C");
+	}
+	 	leia.close();
+
+}
+}

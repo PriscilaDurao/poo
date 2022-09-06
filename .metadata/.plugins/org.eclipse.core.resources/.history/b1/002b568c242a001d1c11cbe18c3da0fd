@@ -1,0 +1,30 @@
+//O programa “Tempo de vida” irá imprimir a soma das idades de todos os
+//colegas da sua equipe (6 pessoas). Pergunte a cada um a idade e não
+//esqueça a sua! Depois faça a atribuição direta da expressão em uma
+//variável inteira.
+
+package br.com.residencia.poo.segundaaula;
+import java.util.Scanner;
+
+public class SegundaAulaExercicioDois {
+	
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner (System.in);
+		int idade, total = 0;
+		
+		for (int cont = 1; cont <= 6; cont++) {
+			
+			System.out.print("Qual a sua idade? ");
+			idade = leia.nextInt();
+			 total += idade;
+			 
+			
+		}
+		System.out.println("O tempo de vida dos meus colegas é " + total + ".");
+		
+		leia.close();
+		
+
+	}
+}

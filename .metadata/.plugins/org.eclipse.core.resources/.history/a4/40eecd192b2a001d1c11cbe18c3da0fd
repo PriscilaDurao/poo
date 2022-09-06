@@ -1,0 +1,49 @@
+//Crie o programa “mini calculadora”, que após ler dois números inteiros
+//apresenta as operações de soma, subtração, multiplicação e divisão com
+//eles.
+//Obs.: Trate o maior número possível de erros (ex: operações com números
+//negativos, divisão por zero, uso de letras, etc).
+
+package br.com.residencia.poo.segundaaula;
+
+public class SegundaAulaExercicioTres {
+
+	public static void main(String[] args) {
+		
+		Scanner 
+		float N1, N2,NR, NR1, NR2, NR3;
+		String tipo;
+
+	     escreva("Descubra o resultado: ")
+	     escreva("\n", "Digite um número: ")
+	     leia(N1)
+	     escreva("Escolha um tipo de conta: soma (+), subtração (-), multiplicação (*) ou divisão (/): ")
+	     leia(tipo)
+	     escreva("Digite outro número: ")
+	     leia(N2)
+
+	     se(tipo=="soma" ou tipo=="Soma"  ou tipo=="+")
+	     {
+	     	NR=N1+N2
+	     	escreva ("\n", "Seu resultado é ",+NR, ".")
+	     }
+	     	senao se(tipo=="subtração" ou tipo=="Subtração" ou tipo=="-")
+	     	{
+	     		NR1=N1-N2     	
+	     		escreva ("\n", "Seu resultado é ",+NR1, ".")
+	     	}
+	     		senao se(tipo=="multiplicação" ou tipo=="Multiplicação" ou tipo=="*")
+	     		{
+	     			NR2=N1*N2
+	     			escreva ("\n", "Seu resultado é ",+NR2, ".")
+	     		}
+	     			senao se(tipo=="divisão" ou tipo=="Divisão" ou tipo=="/")
+	     			{
+	     				NR3=N1/N2
+	     				escreva ("\n", "Seu resultado é ",+NR3, ".")
+	     			}
+		}
+	}
+	}
+
+}

@@ -1,0 +1,31 @@
+package br.com.poo.sistemabancario.principal;
+
+import br.com.poo.sistemabancario.contas.Conta;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Conta contaDois = new Conta();
+
+		contaUm.titular = "Priscila";
+		contaUm.saldo = 1000.0;
+		contaUm.numero = 132;
+		contaUm.sacar(50.0);
+		contaUm.depositar(20.0);
+
+		System.out.println("Saldo atual: " + contaUm.saldo + "\nNome do titular: " + contaUm.titular
+				+ "\nNúmero da conta: " + contaUm.numero);
+	}
+
+	{Conta contaDois = new Conta();
+	
+	contaDois.titular = "Priscila";
+	contaDois.saldo = 1000.0;
+	contaDois.numero = 132;
+	contaDois.sacar(50.0);
+	contaDois.depositar(20.0);
+
+	System.out.println("Saldo atual: " + contaDois.saldo + "\nNome do titular: " + contaDois.titular
+			+ "\nNúmero da conta: " + contaDois.numero);
+	}
+}

@@ -1,0 +1,55 @@
+//Crie o programa “mini calculadora”, que após ler dois números inteiros
+//apresenta as operações de soma, subtração, multiplicação e divisão com
+//eles.
+//Obs.: Trate o maior número possível de erros (ex: operações com números
+//negativos, divisão por zero, uso de letras, etc).
+
+package br.com.residencia.poo.segundaaula;
+
+import java.util.Scanner;
+
+public class SegundaAulaExercicioTres {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner (System.in);
+		float N1, N2, NR, NR1, NR2, NR3;
+		String tipo;
+
+	     System.out.println("Descubra o resultado: ");
+	     System.out.print("\nDigite um número: ");
+	     N1 = leia.nextFloat();
+	     System.out.print("Escolha um tipo de conta: soma (+), subtração (-), multiplicação (*) ou divisão (/): ");
+	     tipo = leia.next();
+	     System.out.print("Digite outro número: ");
+	     N2 = leia.nextFloat();
+	     
+	     if(tipo.equals("soma")  ||  tipo.equals("Soma") ||  tipo.equals("+")){
+	    	 
+	     	NR = N1 + N2;
+	     	System.out.print("\nSeu resultado é " + NR + ".");
+	     
+	     	
+	     } else if (tipo.equals("subtração") || tipo.equals("Subtração") || tipo.equals("-")){
+	    	 
+	     		NR1 = N1 - N2;     	
+	     		System.out.print("\nSeu resultado é "+ NR1 + ".");
+	     		
+	     	} else if (tipo.equals("multiplicação") || tipo.equals("Multiplicação") || tipo.equals("*")){
+	     			
+	     		NR2 = N1 * N2;
+	     		System.out.print("\nSeu resultado é " + NR2 + ".");
+	      	
+	     	} else if(tipo.equals("divisão") || tipo.equals("Divisão") || tipo.equals("/")){
+	    	 
+	     		NR3 = N1 / N2;
+	     		System.out.print ("\nSeu resultado é " + NR3 + ".");
+	     				
+	     	}
+	     leia.close();
+	     
+		}
+	
+	}
+
+

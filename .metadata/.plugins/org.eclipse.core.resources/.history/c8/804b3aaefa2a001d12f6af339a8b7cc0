@@ -1,0 +1,16 @@
+package br.com.residencia.poo.novos;
+
+public class BalancoTrimestral {
+
+	public static void main(String[] args) {
+		
+		int gatosJaneiro = 15000;
+		int gastosFevereiro = 23000;
+		int gastosMarco = 17000;
+		int gastosTrimestre = (gatosJaneiro + gastosFevereiro + gastosMarco);
+		
+		System.out.println("Seu gasto trimestral é " + gastosTrimestre + ".");
+
+	}
+
+}

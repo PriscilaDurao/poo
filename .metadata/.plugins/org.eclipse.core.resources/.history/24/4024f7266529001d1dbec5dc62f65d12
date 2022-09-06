@@ -1,0 +1,30 @@
+package br.com.residencia.poo.aula1;
+
+import java.util.Scanner;
+
+public class PrimeiraAula3 {
+
+	public static void main(String[] args) {
+	
+	Scanner ler = new Scanner(System.in);
+	Float nota, media, totalNotas = 0.0f;
+	String disciplina, nome;
+	System.out.println("Digete seu nome: ");
+	nome = ler.nextLine();
+	System.out.println("Digite a disciplina: ");
+	disciplina = ler.nextLine();
+	
+	
+	for (int cont = 1; cont <=3; cont++) {
+		System.out.println("Insira a sua nota: ");
+		nota = ler.nextFloat();
+		totalNotas += nota;
+	}
+	media = totalNotas / 3;
+	System.out.println("Olá " + nome);
+	System.out.println("Sua média na disciplina " + disciplina + " é " + media);
+	ler.close();
+
+	}
+
+}

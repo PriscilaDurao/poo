@@ -1,0 +1,13 @@
+package br.com.residencia.poo.novos;
+
+public class ExercicioUmSlide {
+
+	public static void main(String[] args) {
+		
+		String BlocoTrimestral;
+		
+		
+
+	}
+
+}
